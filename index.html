@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Primary Meta Tags -->
+    <title>PPDev - Crafting Digital Experiences</title>
+    <meta name="title" content="PPDev - Crafting Digital Experiences">
+    <meta name="description" content="We build high-performance web and mobile applications from Slovakia to the world. Specializing in React, Flutter, and Software Architecture.">
+    <meta name="keywords" content="digital agency, web development, mobile apps, software architecture, Slovakia, PPDev, React, Flutter">
+    <meta name="author" content="PPDev s. r. o.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ppdev.sk/">
+    <meta property="og:title" content="PPDev - Crafting Digital Experiences">
+    <meta property="og:description" content="High-performance digital solutions focusing on scalability and pixel-perfect code.">
+    <!-- Note: Social crawlers often require absolute URLs for OG images -->
+    <meta property="og:image" content="https://ppdev.sk/img/habo_mockup.webp">
+
+    <link rel="canonical" href="https://ppdev.sk/" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#13ec37",
+                        "primary-dark": "#0fc72d",
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gradient {
+            background: linear-gradient(to right, #13ec37, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card:hover .project-mockup {
+            transform: translateY(2rem) scale(1.05);
+        }
+        [data-i18n] { 
+            transition: opacity 0.2s ease-in-out; 
+        }
+        .lang-active { 
+            background: white; 
+            color: #0f172a; 
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased">
+
+    <!-- Navbar -->
+    <header class="absolute top-0 z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <span class="material-symbols-outlined text-primary text-3xl font-bold">terminal</span>
+                    <span class="text-xl font-black tracking-tight text-slate-900">PPDev</span>
+                </div>
+
+                <div class="flex items-center bg-slate-100 p-1 rounded-full border border-slate-200 shadow-inner">
+                    <button id="lang-en" onclick="setLanguage('en')" class="lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all">EN</button>
+                    <button id="lang-sk" onclick="setLanguage('sk')" class="text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all">SK</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex flex-col items-center max-w-4xl mx-auto">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-10">
+                        <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                        <span data-i18n="availability" class="text-[10px] font-bold text-primary tracking-widest uppercase">Available for new projects</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[1.05] mb-8 text-slate-900">
+                        <span data-i18n="heroTitle1">Crafting Digital</span> <br />
+                        <span data-i18n="heroTitle2" class="text-gradient">Experiences</span>
+                    </h1>
+
+                    <p data-i18n="heroSub" class="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-12">
+                        We build web and mobile applications from Slovakia to the world. Focusing on performance, scalability, and pixel-perfect code.
+                    </p>
+
+                    <div class="flex justify-center w-full">
+                        <a href="#work" class="flex items-center justify-center gap-2 bg-slate-900 text-white font-bold text-base h-14 px-10 rounded-xl hover:bg-slate-800 transition-all shadow-2xl shadow-slate-300 group">
+                            <span data-i18n="heroBtnWork">View Our Work</span>
+                            <span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-y-1">arrow_downward</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-24 w-full flex justify-center border-t border-slate-50 pt-10">
+                        <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10">
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-primary text-xl font-bold">language</span>
+                                <span data-i18n="webDev" class="text-sm font-bold text-slate-700">Web Development</span>
+                            </div>
+                            <span class="hidden sm:block text-slate-300">•</span>
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-primary text-xl font-bold">smartphone</span>
+                                <span data-i18n="mobileApps" class="text-sm font-bold text-slate-700">Mobile Apps</span>
+                            </div>
+                            <span class="hidden sm:block text-slate-300">•</span>
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-primary text-xl font-bold">architecture</span>
+                                <span data-i18n="softwareArch" class="text-sm font-bold text-slate-700">Software Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work -->
+        <section class="py-24 bg-white" id="work">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-14">
+                    <h3 data-i18n="featuredTitle" class="text-4xl font-extrabold text-slate-900 mb-3">Featured Work</h3>
+                    <p data-i18n="featuredSub" class="text-slate-500 font-medium text-lg">Our latest contribution to the digital wellness space.</p>
+                </div>
+
+                <div class="project-card group relative rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 transition-all hover:border-primary/20 hover:shadow-2xl">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="flex-1 p-8 md:p-12 lg:p-20 flex flex-col justify-center gap-10">
+                            <div class="flex items-center h-12">
+                                <img src="img/habo_logo.svg" alt="Habo Logo" class="h-full w-auto object-contain">
+                            </div>
+                            <div class="space-y-5">
+                                <h5 data-i18n="haboHeadline" class="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1]">Build Better Habits, One Day at a Time.</h5>
+                                <p data-i18n="haboDesc" class="text-lg text-slate-600 leading-relaxed max-w-lg">
+                                    A minimalist habit tracker designed to help users build and maintain positive routines. Featuring a clean interface, progress statistics, and daily reminders.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">iOS</span>
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">Android</span>
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">Product Design</span>
+                            </div>
+                            <div class="pt-4">
+                                <a href="https://habo.space" target="_blank" class="inline-flex items-center gap-3 text-slate-900 font-extrabold text-lg hover:text-primary transition-all group/link">
+                                    <span data-i18n="visitSite">Visit</span> habo.space
+                                    <span class="material-symbols-outlined font-bold transition-transform group-hover/link:translate-x-1.5">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-gradient-to-br from-slate-100 to-slate-200 relative min-h-[500px] lg:min-h-auto overflow-hidden flex items-end justify-center px-8 lg:px-16 pt-16">
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[100px] opacity-60"></div>
+                            <img src="img/habo_mockup.webp" alt="Habo Application Mockup" class="project-mockup relative z-10 w-full max-w-[380px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-700 translate-y-32">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 bg-white relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <h2 data-i18n="ctaTitle" class="text-4xl md:text-7xl font-black text-slate-900 mb-8 tracking-tight">Ready to bring your idea to life?</h2>
+                <p data-i18n="ctaSub" class="text-xl md:text-2xl text-slate-500 mb-12 font-medium max-w-2xl mx-auto leading-relaxed">
+                    Whether you need a full development or expert consultation, PPDev is here to help you scale.
+                </p>
+                <div class="flex justify-center">
+                    <a href="mailto:info@ppdev.sk" class="text-3xl md:text-4xl font-black text-primary hover:text-emerald-500 transition-all underline decoration-slate-200 hover:decoration-primary underline-offset-8">
+                        info@ppdev.sk
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-t from-slate-50/50 to-transparent pointer-events-none"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between gap-12 mb-20">
+                <div class="max-w-sm">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl font-bold">terminal</span>
+                        <h2 class="text-2xl font-black text-slate-900">PPDev</h2>
+                    </div>
+                    <p data-i18n="footerSlogan" class="text-base text-slate-500 leading-relaxed font-medium">Crafting digital solutions from Slovakia to the global market.</p>
+                </div>
+                <div class="text-slate-500 font-medium text-sm leading-relaxed md:text-right">
+                    <p class="font-black text-slate-900 text-lg mb-2">PPDev s. r. o.</p>
+                    <p>Račianska 13916/26A</p>
+                    <p>831 02 Bratislava</p>
+                    <div class="mt-4 space-y-1">
+                        <p><span class="text-slate-400 font-bold uppercase tracking-wider text-[10px] mr-2">IČO</span> 57137773</p>
+                        <p><span class="text-slate-400 font-bold uppercase tracking-wider text-[10px] mr-2">DIČ</span> 2122581989</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm font-semibold text-slate-400">
+                    © <span id="year"></span> PPDev s.r.o. <span data-i18n="rights">All rights reserved.</span>
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="mailto:info@ppdev.sk" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all">
+                        <span class="material-symbols-outlined text-xl">mail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        const translations = {
+            en: {
+                availability: "Available for new projects",
+                heroTitle1: "Crafting Digital",
+                heroTitle2: "Experiences",
+                heroSub: "We build web and mobile applications from Slovakia to the world. Focusing on performance, scalability, and pixel-perfect code.",
+                heroBtnWork: "View Our Work",
+                webDev: "Web Development",
+                mobileApps: "Mobile Apps",
+                softwareArch: "Software Architecture",
+                featuredTitle: "Featured Work",
+                featuredSub: "Our latest contribution to the digital wellness space.",
+                haboHeadline: "Build Better Habits, One Day at a Time.",
+                haboDesc: "A minimalist habit tracker designed to help users build and maintain positive routines. Featuring a clean interface, progress statistics, and daily reminders.",
+                visitSite: "Visit",
+                ctaTitle: "Ready to bring your idea to life?",
+                ctaSub: "Whether you need a full development or expert consultation, PPDev is here to help you scale.",
+                footerSlogan: "Crafting digital solutions from Slovakia to the global market.",
+                rights: "All rights reserved."
+            },
+            sk: {
+                availability: "Dostupní pre nové projekty",
+                heroTitle1: "Tvoríme digitálne",
+                heroTitle2: "zážitky",
+                heroSub: "Budujeme webové a mobilné aplikácie zo Slovenska do celého sveta. Zameriavame sa na výkon, škálovateľnosť a čistý kód.",
+                heroBtnWork: "Naša práca",
+                webDev: "Vývoj webu",
+                mobileApps: "Mobilné aplikácie",
+                softwareArch: "Softvérová Architektúra",
+                featuredTitle: "Vybrané projekty",
+                featuredSub: "Náš najnovší príspevok do sveta digitálneho wellness.",
+                haboHeadline: "Budujte lepšie návyky, deň po dni.",
+                haboDesc: "Minimalistický sledovač návykov navrhnutý tak, aby pomohol používateľom budovať a udržiavať pozitívne rutiny. Obsahuje čisté rozhranie, štatistiky a pripomienky.",
+                visitSite: "Navštíviť",
+                ctaTitle: "Pripravení oživiť váš nápad?",
+                ctaSub: "Či už potrebujete kompletný vývoj alebo odbornú konzultáciu, PPDev je tu, aby vám pomohol rásť.",
+                footerSlogan: "Tvoríme digitálne riešenia zo Slovenska pre globálny trh.",
+                rights: "Všetky práva vyhradené."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.style.opacity = '0';
+                    setTimeout(() => {
+                        el.innerText = translations[lang][key];
+                        el.style.opacity = '1';
+                    }, 200);
+                }
+            });
+
+            // Update UI buttons
+            document.getElementById('lang-en').className = lang === 'en' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
+            document.getElementById('lang-sk').className = lang === 'sk' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
+            
+            document.documentElement.lang = lang;
+            localStorage.setItem('preferred-lang', lang);
+        }
+
+        // Initialize from local storage if exists
+        const savedLang = localStorage.getItem('preferred-lang');
+        if (savedLang && savedLang !== 'en') setLanguage(savedLang);
+    </script>
+</body>
+</html>
