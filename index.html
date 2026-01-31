@@ -24,53 +24,8 @@
     <link rel="canonical" href="https://ppdev.sk/" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#13ec37",
-                        "primary-dark": "#0fc72d",
-                        slate: {
-                            50: '#f8fafc',
-                            100: '#f1f5f9',
-                            200: '#e2e8f0',
-                            300: '#cbd5e1',
-                            400: '#94a3b8',
-                            500: '#64748b',
-                            600: '#475569',
-                            700: '#334155',
-                            800: '#1e293b',
-                            900: '#0f172a',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ["Inter", "sans-serif"],
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .text-gradient {
-            background: linear-gradient(to right, #13ec37, #059669);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .project-card:hover .project-mockup {
-            transform: translateY(2rem) scale(1.05);
-        }
-        [data-i18n] { 
-            transition: opacity 0.2s ease-in-out; 
-        }
-        .lang-active { 
-            background: white; 
-            color: #0f172a; 
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
-        }
-    </style>
+    <link rel="stylesheet" href="output.css">
+
 </head>
 <body class="bg-white text-slate-900 font-sans antialiased">
 
@@ -147,7 +102,7 @@
                     <p data-i18n="featuredSub" class="text-slate-500 font-medium text-lg">Our latest contribution to the digital wellness space.</p>
                 </div>
 
-                <div class="project-card group relative rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 transition-all hover:border-primary/20 hover:shadow-2xl">
+                <div class="project-card group relative rounded-4xl overflow-hidden bg-slate-50 border border-slate-100 transition-all hover:border-primary/20 hover:shadow-2xl">
                     <div class="flex flex-col lg:flex-row">
                         <div class="flex-1 p-8 md:p-12 lg:p-20 flex flex-col justify-center gap-10">
                             <div class="flex items-center h-12">
@@ -160,9 +115,9 @@
                                 </p>
                             </div>
                             <div class="flex flex-wrap gap-3">
-                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">iOS</span>
-                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">Android</span>
-                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-sm">Product Design</span>
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-xs">iOS</span>
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-xs">Android</span>
+                                <span class="px-5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 text-slate-700 shadow-xs">Product Design</span>
                             </div>
                             <div class="pt-4">
                                 <a href="https://habo.space" target="_blank" class="inline-flex items-center gap-3 text-slate-900 font-extrabold text-lg hover:text-primary transition-all group/link">
@@ -171,7 +126,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="flex-1 bg-gradient-to-br from-slate-100 to-slate-200 relative min-h-[500px] lg:min-h-auto overflow-hidden flex items-end justify-center px-8 lg:px-16 pt-16">
+                        <div class="flex-1 bg-linear-to-br from-slate-100 to-slate-200 relative min-h-[500px] lg:min-h-auto overflow-hidden flex items-end justify-center px-8 lg:px-16 pt-16">
                             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[100px] opacity-60"></div>
                             <img src="img/habo_mockup.webp" alt="Habo Application Mockup" class="project-mockup relative z-10 w-full max-w-[380px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-700 translate-y-32">
                         </div>
@@ -193,7 +148,7 @@
                     </a>
                 </div>
             </div>
-            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-t from-slate-50/50 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-linear-to-t from-slate-50/50 to-transparent pointer-events-none"></div>
         </section>
     </main>
 

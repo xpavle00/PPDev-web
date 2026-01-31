@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #13ec37;
+  --color-primary-dark: #0fc72d;
+
+  --font-sans: Inter, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #13ec37, #059669);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-card:hover .project-mockup {
+    transform: translateY(2rem) scale(1.05);
+}
+
+[data-i18n] {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.lang-active {
+    background: white;
+    color: #0f172a;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
