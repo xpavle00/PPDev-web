@@ -1,0 +1,12 @@
+# User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ppdev.sk/sitemap.xml
+
+# Block common bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

@@ -1,0 +1,52 @@
+# PPDev - Digital Agency
+
+> **Website**: https://ppdev.sk  
+> **Email**: info@ppdev.sk  
+> **Location**: Bratislava, Slovakia  
+> **Established**: 2025
+
+## About
+
+PPDev s.r.o. is a Slovak digital agency specializing in crafting premium digital experiences. We build web applications, mobile apps, and provide expert consultation for businesses looking to scale their digital presence.
+
+## Services
+
+- **Web Development**: Full-stack web applications using modern frameworks (Vue.js)
+- **Mobile Development**: Native and cross-platform mobile applications (Flutter)
+- **Consulting**: Expert technical consultation and architecture planning
+- **Digital Strategy**: From MVP to scale, we help businesses grow digitally
+
+## Featured Work
+
+### Habo - Habit Tracking App
+A premium habit tracking application available on iOS and Android. Built with Flutter, featuring beautiful UI, local-first architecture, and comprehensive tracking capabilities.
+
+- Platform: iOS, Android
+- Technology: Flutter
+- Website: https://habo.space
+
+## Tech Stack
+
+We work with modern, production-ready technologies:
+- Frontend: Vue.js, Tailwind CSS
+- Mobile: Flutter
+- Backend: Node.js, Laravel, PostgreSQL, Supabase
+- Infrastructure: Docker, AWS, Vercel
+
+## Contact
+
+For new projects and collaborations:
+- Email: info@ppdev.sk
+- Website: https://ppdev.sk
+
+## Company Information
+
+**PPDev s.r.o.**
+Bratislava, Slovakia
+
+- IČO: 57137773
+- DIČ: 2122581989
+
+---
+
+*This file provides context for Large Language Models. Learn more at https://llmstxt.org/*
