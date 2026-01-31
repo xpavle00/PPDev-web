@@ -21,9 +21,16 @@
     <!-- Note: Social crawlers often require absolute URLs for OG images -->
     <meta property="og:image" content="https://ppdev.sk/img/habo_mockup.webp">
 
+
     <link rel="canonical" href="https://ppdev.sk/" />
+    
+    <!-- Preconnect to speed up Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
     <link rel="stylesheet" href="output.css">
 
 </head>
@@ -38,9 +45,9 @@
                     <span class="text-xl font-black tracking-tight text-slate-900">PPDev</span>
                 </div>
 
-                <div class="flex items-center bg-slate-100 p-1 rounded-full border border-slate-200 shadow-inner">
+                <div class="flex items-center bg-slate-50 p-1 rounded-full border border-slate-200 shadow-inner">
                     <button id="lang-en" onclick="setLanguage('en')" class="lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all">EN</button>
-                    <button id="lang-sk" onclick="setLanguage('sk')" class="text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all">SK</button>
+                    <button id="lang-sk" onclick="setLanguage('sk')" class="text-slate-600 hover:text-slate-700 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all">SK</button>
                 </div>
             </div>
         </div>
@@ -53,7 +60,7 @@
                 <div class="flex flex-col items-center max-w-4xl mx-auto">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-10">
                         <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-                        <span data-i18n="availability" class="text-[10px] font-bold text-primary tracking-widest uppercase">Available for new projects</span>
+                        <span data-i18n="availability" class="text-[10px] font-bold text-emerald-700 tracking-widest uppercase">Available for new projects</span>
                     </div>
 
                     <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[1.05] mb-8 text-slate-900">
@@ -98,7 +105,7 @@
         <section class="py-24 bg-white" id="work">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="mb-14">
-                    <h3 data-i18n="featuredTitle" class="text-4xl font-extrabold text-slate-900 mb-3">Featured Work</h3>
+                    <h2 data-i18n="featuredTitle" class="text-4xl font-extrabold text-slate-900 mb-3">Featured Work</h2>
                     <p data-i18n="featuredSub" class="text-slate-500 font-medium text-lg">Our latest contribution to the digital wellness space.</p>
                 </div>
 
@@ -106,10 +113,10 @@
                     <div class="flex flex-col lg:flex-row">
                         <div class="flex-1 p-8 md:p-12 lg:p-20 flex flex-col justify-center gap-10">
                             <div class="flex items-center h-12">
-                                <img src="img/habo_logo.svg" alt="Habo Logo" class="h-full w-auto object-contain">
+                                <img src="img/habo_logo.svg" alt="Habo Logo" class="h-full w-auto object-contain" loading="lazy" decoding="async">
                             </div>
                             <div class="space-y-5">
-                                <h5 data-i18n="haboHeadline" class="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1]">Build Better Habits, One Day at a Time.</h5>
+                                <h3 data-i18n="haboHeadline" class="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1]">Build Better Habits, One Day at a Time.</h3>
                                 <p data-i18n="haboDesc" class="text-lg text-slate-600 leading-relaxed max-w-lg">
                                     A minimalist habit tracker designed to help users build and maintain positive routines. Featuring a clean interface, progress statistics, and daily reminders.
                                 </p>
@@ -128,7 +135,7 @@
                         </div>
                         <div class="flex-1 bg-linear-to-br from-slate-100 to-slate-200 relative min-h-[500px] lg:min-h-auto overflow-hidden flex items-end justify-center px-8 lg:px-16 pt-16">
                             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[100px] opacity-60"></div>
-                            <img src="img/habo_mockup.webp" alt="Habo Application Mockup" class="project-mockup relative z-10 w-full max-w-[380px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-700 translate-y-32">
+                            <img src="img/habo_mockup.webp" alt="Habo Application Mockup" class="project-mockup relative z-10 w-full max-w-[380px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-700 translate-y-32" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -168,8 +175,8 @@
                     <p>Račianska 13916/26A</p>
                     <p>831 02 Bratislava</p>
                     <div class="mt-4 space-y-1">
-                        <p><span class="text-slate-400 font-bold uppercase tracking-wider text-[10px] mr-2">IČO</span> 57137773</p>
-                        <p><span class="text-slate-400 font-bold uppercase tracking-wider text-[10px] mr-2">DIČ</span> 2122581989</p>
+                        <p><span class="text-slate-500 font-bold uppercase tracking-wider text-[10px] mr-2">IČO</span> 57137773</p>
+                        <p><span class="text-slate-500 font-bold uppercase tracking-wider text-[10px] mr-2">DIČ</span> 2122581989</p>
                     </div>
                 </div>
             </div>
@@ -243,8 +250,8 @@
             });
 
             // Update UI buttons
-            document.getElementById('lang-en').className = lang === 'en' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
-            document.getElementById('lang-sk').className = lang === 'sk' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-400 hover:text-slate-600 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
+            document.getElementById('lang-en').className = lang === 'en' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-600 hover:text-slate-700 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
+            document.getElementById('lang-sk').className = lang === 'sk' ? 'lang-active px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all' : 'text-slate-600 hover:text-slate-700 px-3 py-1 rounded-full text-[10px] font-black tracking-tighter uppercase transition-all';
             
             document.documentElement.lang = lang;
             localStorage.setItem('preferred-lang', lang);
