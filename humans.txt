@@ -1,0 +1,14 @@
+/* TEAM */
+    Founder & Lead Developer: Peter Pavlenko
+    Contact: info@ppdev.sk
+    From: Slovakia
+
+/* THANKS */
+    The open source community for the amazing tools.
+
+/* SITE */
+    Last update: 2026/02/05
+    Language: English, Slovak
+    Doctype: HTML5
+    IDE: VS Code, JetBrains IDEs
+    Tags: Laravel, Vue, Flutter, Tailwind CSS
