@@ -1,4 +1,4 @@
-# PPDev - Digital Agency
+# PPDev - Digital Studio
 
 > **Website**: https://ppdev.sk  
 > **Email**: info@ppdev.sk  
@@ -7,7 +7,7 @@
 
 ## About
 
-PPDev s.r.o. is a Slovak digital agency specializing in crafting premium digital experiences. We build web applications, mobile apps, and provide expert consultation for businesses looking to scale their digital presence.
+PPDev s.r.o. is a Slovak digital studio specializing in crafting premium digital experiences. We build web applications, mobile apps, and provide expert consultation for businesses looking to scale their digital presence.
 
 ## Services
 
